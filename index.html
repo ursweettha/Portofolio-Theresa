@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Theresa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#about" class="nav-logo">✦ portfolio</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Project</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode" title="Ganti Tema">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero & About Section -->
+    <section id="about" class="about-section">
+      <div class="container hero-wrapper">
+        <div class="hero-left">
+          <span class="availability-badge">✨ Open for Internship &amp; UI/UX Collaboration</span>
+          <h1 id="asciiMorphTitle" class="hero-title" data-text="Hi, I'm Theresa">Hi, I'm Theresa</h1>
+          <div class="hero-subtitle">
+            <span>I am a&nbsp;</span>
+            <span id="typewriterRole" class="typed-role"></span><span class="cursor">|</span>
+          </div>
+          <p class="hero-tagline">
+            Mahasiswi <strong>Pendidikan Teknik Informatika — Universitas Negeri Malang</strong> yang memadukan kepekaan desain antarmuka (UI/UX) dengan pemahaman teknis pengembangan web.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="hero-action-btn">Lihat Studi Kasus UI/UX &rarr;</a>
+            <a href="#contact" class="hero-action-btn secondary">Hubungi Saya &rarr;</a>
+          </div>
+        </div>
+
+        <!-- ASCII Art Typewriter -->
+        <div class="hero-right" aria-hidden="true">
+          <pre id="asciiArtBox" class="ascii-art"></pre>
+        </div>
+      </div>
+
+      <!-- Scrapbook Journal & Floating Stickers -->
+      <div class="journal-area">
+        <div class="container journal-stage">
+          <div id="stickersLayer" class="stickers-layer" aria-hidden="true"></div>
+
+          <div id="journalCard" class="journal-card" role="button" tabindex="0" title="Klik untuk memperbesar foto profil">
+            <div class="washi-tape tape-top-left"></div>
+            <div class="washi-tape tape-top-right"></div>
+
+            <div class="journal-grid">
+              <!-- Kolom Kiri Jurnal: 1 Foto Polaroid & Status -->
+              <div class="journal-left">
+                <div class="polaroid-frame">
+                  <img
+                    src="profile.jpg"
+                    alt="Theresa Nathalie Davny Wowiling"
+                    class="polaroid-img"
+                  />
+                  <p class="handwriting polaroid-caption">click to enlarge ✨</p>
+                </div>
+                <div class="sticky-note">
+                  <p class="handwriting sticky-title">Education &amp; Focus:</p>
+                  <ul class="sticky-list">
+                    <li>🎓 Pend. Teknik Informatika — UM</li>
+                    <li>🎨 UI/UX Design &amp; Prototyping</li>
+                    <li>💻 HTML, CSS &amp; JS Basics</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Kolom Kanan Jurnal: Profil Singkat untuk HRD -->
+              <div class="journal-right">
+                <span class="journal-date handwriting">Universitas Negeri Malang • Informatics Education</span>
+                <h2 class="journal-heading handwriting">About Me ✿</h2>
+                <p class="journal-text">
+                  Saya adalah mahasiswi <strong>Pendidikan Teknik Informatika di Universitas Negeri Malang</strong> dengan minat kuat di bidang <strong>UI/UX Design</strong>. Latar belakang pendidikan informatika melatih saya berpikir terstruktur dan memahami batasan teknis saat merancang antarmuka.
+                </p>
+                <p class="journal-text">
+                  Saya terbiasa menerjemahkan kebutuhan pengguna menjadi <em>user flow</em> yang jelas, <em>wireframe</em>, hingga <em>interactive prototype</em> di Figma yang siap diimplementasikan oleh tim developer. Saya antusias untuk berkontribusi dalam tim produk maupun kesempatan magang.
+                </p>
+                <div class="journal-tags">
+                  <span class="j-tag">#UIUXDesign</span>
+                  <span class="j-tag">#UserCenteredDesign</span>
+                  <span class="j-tag">#Figma</span>
+                  <span class="j-tag">#FrontendBasics</span>
+                </div>
+                <p class="journal-hint">🔍 Klik kartu jurnal ini untuk melihat foto ukuran penuh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project Section (NEKOBREW Figma) -->
+    <section id="projects" class="section-block">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured UI/UX Project</h2>
+          <p class="section-desc">Eksplorasi perancangan antarmuka dan pengalaman pengguna yang dikerjakan menggunakan Figma.</p>
+        </div>
+
+        <div id="projectsGrid" class="single-project-wrapper">
+          <!-- Kartu proyek NEKOBREW dirender otomatis dari script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Basic Skills Section -->
+    <section id="skills" class="section-block">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Keahlian Dasar</h2>
+          <p class="section-desc">Tools desain dan fondasi pengembangan web yang saya kuasai.</p>
+        </div>
+        <div class="skills-marquee">
+          <div id="techStackGrid" class="skills-track">
+            <!-- Ikon keahlian dasar dirender otomatis & looping dari script.js -->
+          </div>
+        </div>
+
+        <div id="techStackGrid" class="tech-grid">
+          <!-- Ikon keahlian dasar dirender otomatis dari script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-block">
+      <div class="container">
+        <div class="contact-card">
+          <h2 class="section-title">Let's Connect! 💌</h2>
+          <p class="section-desc">
+            Terbuka untuk peluang magang (internship), kolaborasi proyek UI/UX, maupun diskusi lebih lanjut. Silakan hubungi saya melalui kontak berikut:
+          </p>
+
+          <div class="contact-actions">
+            <!-- Ganti alamat email, link GitHub, dan LinkedIn milikmu -->
+            <a href="mailto:thesa1312@gmail.com" class="hero-action-btn">
+              ✉️ Kirim Email
+            </a>
+            <button id="copyEmailBtn" class="hero-action-btn secondary" data-email="thesa1312@gmail.com">
+              📋 Salin Email
+            </button>
+            <a href="https://github.com/ursweettha" target="_blank" rel="noopener noreferrer" class="hero-action-btn secondary">
+              GitHub &rarr;
+            </a>
+            <a href="https://www.linkedin.com/in/theresa-nathalie-3a902744b
+" target="_blank" rel="noopener noreferrer" class="hero-action-btn secondary">
+              LinkedIn &rarr;
+            </a>
+          </div>
+          <p id="copyFeedback" class="copy-feedback" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Theresa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Foto Profil Tunggal -->
+  <div id="profileModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Foto profil">
+    <div class="modal-box profile-modal-box">
+      <button id="closeProfileModal" class="modal-close" aria-label="Tutup foto">&times;</button>
+      <div class="single-photo-viewport">
+        <img src="profile.jpg" alt="Foto Profil" class="single-modal-img" />
+      </div>
+      <p class="carousel-caption">Theresa Nathalie Davny Wowiling</p>
+    </div>
+  </div>
+
+  <!-- Modal Detail Proyek & Interactive Figma -->
+  <div id="projectModal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Detail proyek">
+    <div class="modal-box project-modal-box">
+      <button id="closeProjectModal" class="modal-close" aria-label="Tutup detail proyek">&times;</button>
+      <div id="projectModalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
